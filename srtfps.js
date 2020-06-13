@@ -5,10 +5,9 @@ var fpsFromInput = process.argv[3];
 var fpsToInput = process.argv[4];
 
 if (filenameInput == null) {
-    console.log("Enter a valid subtitle to convert.\nExample: $ node index.js <filename> <from fps integer> <to fps integer>")
+    console.log("Enter a valid subtitle to convert.\nExample: $ node srtfps.js <filename> <from fps integer> <to fps integer>")
     return process.exit(22);
 }
-
 
 if (fpsFromInput == '23' && fpsToInput == '25') {
     fpsFromInput = fpsFromInput.toString()
@@ -42,10 +41,8 @@ if (fpsFromInput == '23' && fpsToInput == '25') {
 } else if (fpsFromInput == '25' && fpsToInput == '23') {
     console.log("Coming soon...")
 } else {
-    console.log("Enter the fps you want to convert, ex 23, 25.\nExample: $ node index.js <filename> <from fps integer> <to fps integer>")
+    console.log("Enter the fps you want to convert, ex 23, 25.\nExample: $ node srtfps.js <filename> <from fps integer> <to fps integer>")
 }
-
-
 
 function fpsShift23to25fps(item, fps) {
     const from23to25fps = 0.959040959040959;
