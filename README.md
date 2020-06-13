@@ -9,7 +9,7 @@
 
 ## About <a name = "about"></a>
 
-Node JS CLI program to resync srt frames per seconds. Uses "subtitle" node js.
+Node JS CLI program to resync srt frames per seconds. Uses the "subtitle" node js package found at https://www.npmjs.com/package/subtitle
 
 ## Getting Started <a name = "getting_started"></a>
 
